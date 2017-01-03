@@ -8,9 +8,9 @@ class ContactsController < ApplicationController
     @contact = Contact.new(contact_params)
     if @contact.save
       # grabs the things inside the form
-     name = params[:contact][:name]
-     email = params[:contact][:email]
-     body = params[:contact][:comments]
+      name = params[:contact][:name]
+      email = params[:contact][:email]
+      body = params[:contact][:comments]
       # fires off email to us, the email is in contact_mailer.rb in app/mailers
       ContactMailer.contact_email(name, email, body).deliver
       
