@@ -51,7 +51,7 @@ gem 'figaro', '1.1.1'
 
 # Use Paperclip for image upload
 gem 'paperclip', '4.3.6'
-gem 'aws-sdk', '~> 2.3'
+gem 'aws-sdk', '< 2.0'
 
 group :development, :test do
   # Use sqlite3 as the database for Active Record
